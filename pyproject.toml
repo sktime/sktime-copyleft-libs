@@ -63,3 +63,7 @@ requires = [
 
 [tool.setuptools.packages.find]
 where = [ "src" ]
+
+# each vendored library ships its own upstream LICENSE, as its license requires
+[tool.setuptools.package-data]
+"sktime_copyleft_libs.dynamix" = [ "LICENSE" ]
